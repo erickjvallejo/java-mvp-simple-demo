@@ -12,22 +12,26 @@ public class ViewImpl implements View {
     public void initOnlyWithView() {
         presenter = new Presenter(this);
         showProgressBar();
-        hideProgressBar();
         presenter.updateName("John");
-        showProgressBar();
         hideProgressBar();
+
+        showProgressBar();
         presenter.updateLastname("Doe");
+        hideProgressBar();
+
     }
 
 
     public void initWithViewAndModel() {
         presenter = new Presenter(this, new Model());
         showProgressBar();
-        hideProgressBar();
         presenter.updateName("Jane");
-        showProgressBar();
         hideProgressBar();
+
+        showProgressBar();
         presenter.updateLastname("Doe");
+        hideProgressBar();
+
     }
 
     public void updateUserInfoTextView(String user) {
